@@ -1,0 +1,222 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #666;
+  background: #fff;
+  font-size: 16px;
+  letter-spacing: 0.1rem;
+  display: block;
+  line-height: 1;
+}
+
+.top-menu-area {
+  padding-top: 8px;
+  width: 100%;
+  background: #EDEDED;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.top-menu-area ul {
+  width: 100%;
+  max-width: 1125px;
+  padding: 0 10px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  vertical-align: baseline;
+  list-style: none;
+  letter-spacing: 0;
+}
+
+.top-menu-area ul li {
+  padding: 10px 10px 13px;
+  vertical-align: baseline;
+  position: relative;
+}
+
+.top-menu-area ul li a {
+  font-size: 100%;
+  color: black;
+  text-decoration: none;
+  margin: 0;
+}
+
+.top-menu-area ul li div {
+  background: #B9092F;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  height: 5px;
+  width: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.top-menu-area ul li .mouseon, .top-menu-area ul li #current {
+  width: 100%;
+  left: 0;
+}
+
+.logo-area {
+  margin: 0 auto;
+  padding: 12px 10px;
+  width: 100%;
+  max-width: 1180px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo-area div {
+  width: 15rem;
+}
+
+.logo-area div ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 0 0 5px;
+}
+
+.logo-area div ul li {
+  color: black;
+  letter-spacing: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.logo-area div ul li .language_show {
+  display: block !important;
+}
+
+.logo-area div ul li .language {
+  position: absolute;
+  display: none;
+  width: 110px;
+  top: 30px;
+  left: -5px;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 100;
+  padding: 0 10px;
+  font-size: 16px;
+}
+
+.logo-area div ul li .language ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  list-style: none;
+}
+
+.logo-area div ul li .language ul li {
+  position: relative;
+  width: auto;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0 15px 20px;
+}
+
+.logo-area div ul li .language ul li:hover {
+  color: #ccc;
+}
+
+.logo-area div ul li .language ul #current_language::before {
+  position: absolute;
+  content: "";
+  background: url("https://www.sakicorp.com/wp-content/themes/saki_corporation/assets/images/check.png") no-repeat center;
+  width: 16px;
+  height: 11px;
+  cursor: pointer;
+  top: 1.5rem;
+  left: 0;
+}
+
+.logo-area div ul li img {
+  margin-left: 10px;
+}
+
+.logo-area div ul li .w300 {
+  width: 300px !important;
+}
+
+.logo-area div ul li .search {
+  position: absolute;
+  top: -5px;
+  right: 85px;
+  overflow: hidden;
+  -webkit-transition: .6s;
+  transition: .6s;
+  width: 0;
+}
+
+.logo-area div ul li .search span {
+  position: relative;
+}
+
+.logo-area div ul li .search span::after {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: url("https://www.sakicorp.com/wp-content/themes/saki_corporation/assets/images/loupe.png") no-repeat center;
+  cursor: pointer;
+  width: 16px;
+  height: 15px;
+}
+
+.logo-area div ul li .search input {
+  vertical-align: middle;
+}
+
+.logo-area div ul li .search .search-bar {
+  background: #fff;
+  width: 295px;
+  margin: 0;
+  border: 1px solid #c2c2c2;
+  padding: 10px;
+  position: relative;
+}
+
+header {
+  -webkit-box-shadow: 0px 0px 5px black;
+          box-shadow: 0px 0px 5px black;
+  background: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+main {
+  background: red;
+}
+
+main #slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=style.css.map */

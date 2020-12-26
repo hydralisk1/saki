@@ -1,0 +1,199 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #666;
+    background: #fff;
+    font-size: 16px;
+    letter-spacing: 0.1rem;
+    display: block;
+    line-height: 1;
+}
+
+.top-menu-area {
+    padding-top: 8px;
+    width: 100%;
+    background: #EDEDED;
+    display: flex;
+    justify-content: center;
+
+    ul {
+        width: 100%;
+        max-width: 1125px;
+        padding: 0 10px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        vertical-align: baseline;
+        list-style: none;
+        letter-spacing: 0;
+
+        li {
+            padding: 10px 10px 13px;
+            vertical-align: baseline;
+            position: relative;
+
+            a {
+                font-size: 100%;
+                color: black;
+                text-decoration: none;
+                margin: 0;
+            }
+
+            div {
+                background: #B9092F;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                height: 5px;
+                width: 0;
+                transition: 0.3s;
+            }
+
+            .mouseon, #current{
+                width: 100%;
+                left: 0;
+            }
+        }
+        
+    }
+}
+
+.logo-area {
+    margin: 0 auto;
+    padding: 12px 10px;
+    width: 100%;
+    max-width: 1180px;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width: 15rem;
+
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0 0 5px;
+
+            li {
+                color: black;
+                letter-spacing: 0;
+                position: relative;
+                cursor: pointer;
+
+                .language_show {
+                    display: block !important;
+                }
+
+                .language {
+                    position: absolute;
+                    display: none;
+                    width: 110px;
+                    top: 30px;
+                    left: -5px;
+                    background: rgba(255, 255, 255, 0.95);
+                    z-index: 100;
+                    padding: 0 10px;
+                    font-size: 16px;
+
+                    ul {
+                        display: block;
+                        margin: 0;
+                        padding: 0;
+                        border: 0;
+                        outline: 0;
+                        font-size: 100%;
+                        //background: transparent;
+                        list-style: none;
+
+                        li {
+                            position: relative;
+                            width: auto;
+                            cursor: pointer;
+                            border-bottom: 1px solid #ccc;
+                            padding: 15px 0 15px 20px;
+                        }
+
+                        li:hover{
+                            color: #ccc;
+                        }
+
+                        #current_language {
+                            &::before{
+                                position: absolute;
+                                content: "";
+                                background: url("https://www.sakicorp.com/wp-content/themes/saki_corporation/assets/images/check.png") no-repeat center;
+                                width: 16px;
+                                height: 11px;
+                                cursor: pointer;
+                                top: 1.5rem;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+
+                img {
+                    margin-left: 10px;
+                }
+
+                .w300 {
+                    width: 300px !important;
+                }
+
+                .search {
+                    position: absolute;
+                    top: -5px;
+                    right: 85px;
+                    overflow: hidden;
+                    transition: .6s;
+                    width: 0;
+
+                    span {
+                        position: relative;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: 0.5rem;
+                            right: 0.5rem;
+                            background: url("https://www.sakicorp.com/wp-content/themes/saki_corporation/assets/images/loupe.png") no-repeat center;
+                            cursor: pointer;
+                            width: 16px;
+                            height: 15px;
+                        }
+                    }
+
+                    input {
+                        vertical-align: middle;
+                        
+                    }
+
+                    .search-bar {
+                        background: #fff;
+                        width: 295px;
+                        margin: 0;
+                        border: 1px solid #c2c2c2;
+                        padding: 10px;
+                        position: relative;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+header {
+    box-shadow: 0px 0px 5px black;
+    background: white;
+    position: sticky;
+    top: 0;
+}
+
+main {
+    background: red;
+
+    #slider {
+        display: flex;
+    }
+}

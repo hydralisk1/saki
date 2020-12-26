@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <title>사키 주식회사</title>
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <div class="logo">
+                <a href="#"><img src="https://www.sakicorp.com/wp-content/themes/saki_corporation/assets/images/logo.png" width="300" alt="" /></a>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <span id="search">검색<img class="ml10" src="https://www.sakicorp.com/wp-content/themes/saki_corporation/assets/images/loupe.png" width="16" height="15" alt="" /></span>
+                        <div class="search">
+                            <span><input type="text" size="31" class="search-bar"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <span id="language">언어<img class="ml10" src="https://www.sakicorp.com/wp-content/themes/saki_corporation/assets/images/down.png" width="15" height="8" alt="" /></span>
+                        <div class="language">
+                            <ul>
+                                <li id="current_language">한글</li>
+                                <li>English</li>
+                                <li>日本語</li>
+                                <li>中文</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="top-menu-area">
+            <ul>
+                <li><a href="#">홈</a><div id="current"></div></li>
+                <li><a href="#">제품</a><div></div></li>
+                <li><a href="#">뉴스</a><div></div></li>
+                <li><a href="#">서포트</a><div></div></li>
+                <li><a href="#">회사소개</a><div></div></li>
+                <li><a href="#">Contact Us</a><div></div></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div id="slider"></div>
+    </main>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="./static/js/app.js"></script>
+    <script src="./static/js/slider.js"></script>
+</body>
+</html>
